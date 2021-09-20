@@ -14,12 +14,14 @@ function randomCard(){
     const suitIndex=getRandomInt(4);
     const cardIndex=getRandomInt(13);
     
-    let mystring = cards[cardIndex]+"_of_"+suits[suitIndex]+".png";
+    var mystring = "Playing Cards/PNG-cards-1.3/"+cards[cardIndex]+"_of_"+suits[suitIndex]+".png";
 
-    // document.getElementById('suit').innerHTML=suits[suitIndex];
-    
-    document.getElementById('card').innerHTML=mystring;
+    // var image=document.createElement('img');
+    document.querySelector('.card-img').src=mystring;
 
+    // var sec=getElementById('card-img');
+    // sec.appendChild(image);
+    // document.getElementById('card').innerHTML=image;
 
 }
 
